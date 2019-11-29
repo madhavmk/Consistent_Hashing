@@ -3,7 +3,6 @@ import zlib
 
 from bst import BST
 
-
 class ConsistentHasher:
     def __init__(self):
         self.nodes = BST()
@@ -40,7 +39,3 @@ class ConsistentHasher:
             return
         # print('Key %s was hashed to value %d, and was assigned to node %s with id %d' % (key, key_hash_id, self.id_to_node[assigned_node_id], assigned_node_id))
         return self.id_to_node[assigned_node_id]
-
-
-
-
