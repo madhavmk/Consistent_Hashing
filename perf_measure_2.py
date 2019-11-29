@@ -1,4 +1,4 @@
-#Finds effiiency of adding new nodes to ring
+#Finds efficency of adding new nodes to ring
 
 from hashlib import md5
 from struct import unpack_from
