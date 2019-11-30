@@ -13,7 +13,7 @@ class BstTest(unittest.TestCase):
         consistent_hasher = ConsistentHasher(5)
         for node in nodes:
             consistent_hasher.add_node(node)
-            print('\nAdded node %s with hashed ID %d\n' % (node, consistent_hasher.hash(node)))
+            print('\nAdded node %s \n' % (node))
 
         for key in keys:
             node_id = consistent_hasher.assign_key_to_node(key)

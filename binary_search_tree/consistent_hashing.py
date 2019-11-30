@@ -23,7 +23,7 @@ class ConsistentHasher:
 
     def add_node(self, node_name):
         for i in range(1, self.num_replicas+1):
-            x = str(i) + "_" + node_name
+            x = str(i) + "_" + str(node_name)
             hash_id = self.hash(x)
             self.nodes.insert(hash_id)
             self.id_to_node[hash_id] = x

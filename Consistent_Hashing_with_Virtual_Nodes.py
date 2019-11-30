@@ -62,47 +62,47 @@ def my_hash(key):
   '''my_hash(key) returns a hash in the range [0,1).'''
   return (int(hashlib.md5(key).hexdigest(),16) % 1000000)/1000000.0
 
-def main():
+# def main():
 
-    print("Initializing ring with 1 machine with 3 replicas")
-    ch = ConsistentHash(1,3)
+#     print("Initializing ring with 1 machine with 3 replicas")
+#     ch = ConsistentHash(1,3)
 
-    print "Format:"
-    print "(machine,replica,hash value):"
-    for (j,k,h) in ch.hash_tuples: print "(%s,%s,%s)" % (j,k,h)
+#     print "Format:"
+#     print "(machine,replica,hash value):"
+#     for (j,k,h) in ch.hash_tuples: print "(%s,%s,%s)" % (j,k,h)
 
-    print("Adding 5 more machines")
-    ch.add_machine()
-    ch.add_machine()
-    ch.add_machine()
-    ch.add_machine()
-    ch.add_machine()
+#     print("Adding 5 more machines")
+#     ch.add_machine()
+#     ch.add_machine()
+#     ch.add_machine()
+#     ch.add_machine()
+#     ch.add_machine()
 
-    print "Format:"
-    print "(machine,replica,hash value):"
-    for (j,k,h) in ch.hash_tuples: 
-        print "(%s,%s,%s)" % (j,k,h)
+#     print "Format:"
+#     print "(machine,replica,hash value):"
+#     for (j,k,h) in ch.hash_tuples: 
+#         print "(%s,%s,%s)" % (j,k,h)
 
-    print("Removing a machine")
-    ch.remove_machine()
+#     print("Removing a machine")
+#     ch.remove_machine()
 
-    print "Format:"
-    print "(machine,replica,hash value):"
-    for (j,k,h) in ch.hash_tuples:
-        print "(%s,%s,%s)" % (j,k,h)
+#     print "Format:"
+#     print "(machine,replica,hash value):"
+#     for (j,k,h) in ch.hash_tuples:
+#         print "(%s,%s,%s)" % (j,k,h)
 
-    ch.add_machine()
+#     ch.add_machine()
 
-    print "Format:"
-    print "(machine,replica,hash value):"
-    for (j,k,h) in ch.hash_tuples: 
-        print "(%s,%s,%s)" % (j,k,h)
+#     print "Format:"
+#     print "(machine,replica,hash value):"
+#     for (j,k,h) in ch.hash_tuples: 
+#         print "(%s,%s,%s)" % (j,k,h)
 
-    while True:
-        print "\nPlease enter a key:"
-        key = raw_input()
-        print "\nKey %s maps to hash %s, and so to machine %s" \
-            % (key,my_hash(key),ch.get_machine(key))
+#     while True:
+#         print "\nPlease enter a key:"
+#         key = raw_input()
+#         print "\nKey %s maps to hash %s, and so to machine %s" \
+#             % (key,my_hash(key),ch.get_machine(key))
 
-if __name__ == "__main__": 
-    main()
+# if __name__ == "__main__": 
+#     main()
