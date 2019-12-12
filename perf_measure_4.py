@@ -7,18 +7,20 @@ class test_consistent_hashing(unittest.TestCase):
 
     def test_consistent_hashing(self):
 
-        start = time.time()
+        keys = ["abcd", "xyza", "pqrs", "wxyz", "mnop", "defg", "gred", "ojfew", "wejfnv", "dgerfg", "ierhgj",
+                "srgergh", "ojrfi", "podjf", "powe"]
+        nodes = ["A", "B", "C", "D"]        
 
         consistent_hasher = ConsistentHash(1, 5)
-
-        for i in range(1, 10):
+        for i in nodes:
             consistent_hasher.add_machine()
 
+        start = time.time()        
+        for i in keys:
+                consistent_hasher.get_machine(i)
         end = time.time()
-        
-        
-        
-        print(end - start)
+     
+        print((end - start)/15)
 
 if __name__ == '__main__':
     unittest.main()
