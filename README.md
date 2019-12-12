@@ -1,7 +1,7 @@
 # Distributed Hash Table
 ## Advanced Algorithms Project
 
-Requirements : 
+### Requirements : 
 1. Python 3.x
 2. Python 2.7
 
@@ -22,3 +22,15 @@ perf_measure_3.py : to calculate the efficiency of adding extra virtual nodes
 perf_measure_4.py : timed the find operation on the BST implementation
 
 binary_search_tree/perf_measure : measure of adding nodes to the BST implementation
+
+### Plots of the Results observed
+
+
+#### Performance of Naive Hashing
+![alt test](graph1.png)
+
+#### Performance of Consistent Hashing
+![alt test](graph2.png)
+
+#### Performance of Consistent Hashing with Virtual Nodes
+![alt test](graph3.png)
