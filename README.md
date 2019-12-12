@@ -27,10 +27,13 @@ binary_search_tree/perf_measure : measure of adding nodes to the BST implementat
 
 
 #### Performance of Naive Hashing
-![alt test](graph1.png)
+
+.. image:: /graph1.png?raw=true
 
 #### Performance of Consistent Hashing
-![alt test](graph2.png)
+
+.. image:: /graph2.png?raw=true
 
 #### Performance of Consistent Hashing with Virtual Nodes
-![alt test](graph3.png)
+
+.. image:: /graph3.png?raw=true
