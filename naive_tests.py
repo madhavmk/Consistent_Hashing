@@ -18,8 +18,6 @@ class NaiveTest(unittest.TestCase):
         for key in keys:
             node_id = naive_hasher.assign_key_to_node(key)
             print('Key %s was assigned to node %s \n' % (key, node_id))
-            #print('\nAdded node %s with hashed ID %d\n' % (key, consistent_hasher.hash(key)))
-
 
         node_to_remove = "B"
         naive_hasher.remove_node(node_to_remove)

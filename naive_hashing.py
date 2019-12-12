@@ -12,7 +12,7 @@ class NaiveHasher:
 
     def hash(self, item, limit=4294967295):
         id_hash = hashlib.sha512(item.encode())
-        id_hash_int = int.from_bytes(id_hash.digest(), 'big')  # Uses explicit byteorder for system-agnostic reproducibility
+        id_hash_int = int.from_bytes(id_hash.digest(), 'big')
         final_id = id_hash_int % limit
         return final_id
 
