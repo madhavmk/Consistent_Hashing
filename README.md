@@ -9,15 +9,15 @@ To run the
 
 1. naive_tests.py : Naive implementation of the gistributed Hashing Algorithm
 2. Consistent_Hashing_with_Virtual_Nodes.py : Run on python version 2. Consistent Hashing implementation with virtual nodes.
-3. binary_search_tree/tests.py : Binary Search Tree implementation of the consistent hashing algorithm.
+3. binary_search_tree/tests.py : An example of the Binary Search Tree implementation of the consistent hashing algorithm.
 
 Performance Tests:
 
-perf_measure_1.py :
+perf_measure_1.py : finds imbalance in data load when deleting consecutive nodes
 
-perf_measure_2.py : 
+perf_measure_2.py : finds efficency of adding new nodes to ring
 
-perf_measure_3.py : 
+perf_measure_3.py : to calculate the efficiency of adding extra virtual nodes
 
 perf_measure_4.py : timed the find operation on the BST implementation
 
